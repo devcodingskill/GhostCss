@@ -14,7 +14,7 @@ body {
     height: 400px;
     padding: 0;
     box-sizing: border-box;
-    background: white
+    /* background: white */
     
 }
 
@@ -27,8 +27,8 @@ body {
     margin: 10% auto;
     width: 80%;
     height: 80%;
-    background-color: red;
-    animation: floaty 2s infinite;
+    /* background-color: red; */
+    animation: flyAround 5s infinite;
 }
 
 #body {
@@ -117,12 +117,15 @@ body {
     border-radius: 50%;
 }
 #shadow {
-    margin: -90px auto 0;
-    background: #252c49;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    /* background: #252c49; */
     width: 180px;
     height: 40px;
     border-radius: 50%;
-    animation: zoomy 2s infinite;
+    animation: followGhost 5s infinite;
 }
 
 #reference-line {
@@ -131,7 +134,7 @@ body {
     left: 0;
     width: 100%;
     height: 1px;
-    background: red;
+    /* background: red; */
     /* animation: floaty 2s infinite; */
     /* z-index: 999; */
 }
@@ -152,5 +155,41 @@ body {
 
     50% {
         transform: scale(0.7);
+    }
+}
+
+@keyframes flyAround {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, -50px);
+    }
+    50% {
+        transform: translate(200px, 0);
+    }
+    75% {
+        transform: translate(100px, 50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes followGhost {
+    0% {
+        transform: translate(0, 0) scale(1.5);
+    }
+    25% {
+        transform: translate(100px, -50px) scale(1.2);
+    }
+    50% {
+        transform: translate(200px, 0) scale(1);
+    }
+    75% {
+        transform: translate(100px, 50px) scale(1.2);
+    }
+    100% {
+        transform: translate(0, 0) scale(1.5);
     }
 }
