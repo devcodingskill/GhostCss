@@ -16,6 +16,14 @@ This project demonstrates a fun and spooky ghost animation using HTML and CSS. T
 1. Open the `index.html` file in any modern web browser.
 2. Observe the animated ghost in action.
 
+## Screenshot
+
+![Ghost Animation Screenshot](images/screenshot.png)
+
+## Live Demo
+
+Check out the live demo of the project [here](https://devcodingskill.github.io/GhostCss/).
+
 ## Key CSS Animations
 - **`@keyframes floaty`**: Creates the floating effect by translating the ghost along the Y-axis.
 - **`@keyframes zoomy`**: Animates the shadow to scale dynamically.
