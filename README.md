@@ -34,3 +34,5 @@ Check out the live demo of the project [here](https://devcodingskill.github.io/G
 
 ## License
 This project is for educational and personal use. Feel free to modify and share!
+
+Happy coding!
